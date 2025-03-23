@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/pollitos.css">
+		<title>Pollitos</title>
+	</head>
+	<body>
+		<div id="navbar-container"></div>
+		<script>
+			fetch("templates/navbar.html")
+				.then((response) => response.text())
+				.then((data) => {
+					document.getElementById("navbar-container").innerHTML =
+						data;
+
+					document
+						.getElementById("pollitos-link")
+						.classList.add("active");
+				});
+		</script>
+
+		<div class="quiz-container">
+			<h1>Vamos a averiguar que pollito eres...</h1>
+
+			<form id="quiz-form">
+				<div class="question">
+					<p>¿Qué te gusta hacer en tu tiempo libre?</p>
+					<label><input type="radio" name="question1" value="aventurero">Ir al gym, salir a correr, descubrir lugares nuevos.</label>
+
+					<label><input type="radio" name="question1" value="cariñoso">Ver a mis amigos o estar con mi familia.</label>
+
+					<label><input type="radio" name="question1" value="inteligente">Investigar cosas nuevas, aprender, leer.</label>
+
+					<label><input type="radio" name="question1" value="vago">Mira, realmente lo mío es dormir.</label>
+				</div>
+
+				<div class="question">
+					<p>¿Cómo te describes?</p>
+
+					<label><input type="radio" name="question2" value="inteligente">Curioso, tal vez hasta inteligente.</label>
+					
+					<label><input type="radio" name="question2" value="vago">Perezoso, vago.</label>
+
+					<label><input type="radio" name="question2" value="aventurero">Valiente, un poco imprudente.</label>
+				</div>
+
+				<div class="question">
+					<p>Cuando se acerca el cumpleaños de un amigo tú...</p>
+
+					<label><input type="radio" name="question3" value="cariñoso">Te pasas dias recortando y pegando cosas para regalarle algo handmade.</label>
+					
+					<label><input type="radio" name="question3" value="aventurero">Lo llevas a un lugar nuevo que nunca haya visitado.</label>
+
+					<label><input type="radio" name="question3" value="inteligente">Le compras algo práctico, que sabes que le va a servir.</label>
+				</div>
+
+				<div class="question">
+					<p>Tu asignatura favorita es:</p>
+
+					<label><input type="radio" name="question4" value="inteligente">Matemáticas, números, números, números.</label>
+					
+					<label><input type="radio" name="question4" value="cariñoso">Música, dibujo, todo lo que involucre creatividad.</label>
+
+					<label><input type="radio" name="question4" value="vago">Lo único que me gusta de la escuela es no ir.</label>
+				</div>
+
+				<div class="question">
+					<p>En un futuro quieres ser...</p>
+					
+					<label><input type="radio" name="question5" value="aventurero">Policía, bombero, excursionista.</label>
+
+					<label><input type="radio" name="question5" value="vago">¿Rico?</label>
+
+					<label><input type="radio" name="question5" value="cariñoso">Quiero ser feliz rodeado de las personas que amo.</label>
+				</div>
+
+				<button type="button" id="pollito-btn">Descubrir mi pollito!</button>
+			</form>
+
+			<div class="result-container">
+				<img class="result-img"></img>
+				<p class="result-text"></p>
+			</div>
+		</div>
+
+        <script src="assets/scripts/pollitos.js"></script>
+	</body>
+</html>

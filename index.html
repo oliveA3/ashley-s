@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/index.css">
+		<title>Home</title>
+	</head>
+	<body>
+		<div id="navbar-container"></div>
+		<script>
+			fetch("templates/navbar.html")
+				.then((response) => response.text())
+				.then((data) => {
+					document.getElementById("navbar-container").innerHTML =
+						data;
+
+					document
+						.getElementById("home-link")
+						.classList.add("active");
+				});
+		</script>
+
+        
+        <main class="main-container">
+            <img class="gif" id="sparkles" src="media/home/gifs/sparkles.gif">
+			<img class="gif" id="stars" src="media/home/gifs/stars.gif">
+			
+			<div class="card-container">
+            	<h1 class="card-text">Welcome to Ashley's World...</h1>
+				<p>This is <strong>Home</strong>, figurada y literalmente. A web-site built for you, with everything that make you the brilliant girl I know. Please feel free to explore it and obligated to love it. We have pollitos, cosas coreanas desas (bañate), Minecraft and WoW, and a Gryffindor common room.</p>
+			</div>
+
+            <img class="gif" id="three-hearts" src="media/home/gifs/hearts.gif">
+			<img class="gif" id="cat" src="media/home/gifs/cat.gif">
+        </main>
+
+        <script src="assets/scripts/index.js"></script>
+	</body>
+</html>

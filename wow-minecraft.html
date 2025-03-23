@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/wow-minecraft.css">
+		<title>Games</title>
+	</head>
+	<body>
+		<div id="navbar-container"></div>
+		<script>
+			fetch("templates/navbar.html")
+				.then((response) => response.text())
+				.then((data) => {
+					document.getElementById("navbar-container").innerHTML =
+						data;
+
+					document
+						.getElementById("games-link")
+						.classList.add("active");
+				});
+		</script>
+        <script src="assets/scripts/wow-minecraft.js"></script>
+	</body>
+</html>

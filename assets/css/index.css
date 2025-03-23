@@ -1,0 +1,70 @@
+body {
+    height: 80vh;
+    position: relative;
+    background-image: url("../../media/home/phone_wp.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        background-image: url("../../media/home/desktop_wp.jpg");
+    }
+}
+
+img {
+    width: 100%;
+    position: cover;
+}
+
+.main-container {
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+#sparkles {
+    position: absolute;
+    width: 95%;
+    height: 80vh;
+}
+
+#stars {
+    position: absolute;
+    right: -1px;
+    width: 140px;
+}
+
+.card-container {
+    padding: 100px 0 20px 0;
+}
+
+.card-container h1, p {
+    font-family: 'Chaparral Pro Light';
+    color: #cf156f;
+    text-shadow: 0 0 10px white;
+}
+
+.card-container p {
+    color: #640b36;
+}
+
+#three-hearts {
+    width: 150px;
+    height: 80px;
+    object-fit: cover;
+    transform: rotate(-10deg);
+}
+
+#cat {
+    width: 200px;
+    position: absolute;
+    right: -1px;
+    bottom: -100px;
+    opacity: .7;
+}
+
+.gif {
+    filter: drop-shadow(0 0 10px rgb(44, 43, 43));
+}

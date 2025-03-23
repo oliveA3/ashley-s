@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Letter Gothic Std';
+    background-image: url("../../media/pollitos/phone_wp.jpg");background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.quiz-container {
+    align-self: center;
+    padding: 20px 35px;
+    max-width: 780px;
+}
+
+#quiz-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz-container h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.quiz-container .question {
+    padding: 18px 30px;
+    margin-bottom: 5px;
+}
+
+.quiz-container .question p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.quiz-container .question label {
+    display: block;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 6px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: rgb(218, 218, 0);
+}
+
+button {
+    cursor: pointer;
+    margin: 30px auto;
+    padding: 18px 30px;
+    align-self: center;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Letter Gothic Std';
+}
+
+button:hover {
+    filter: drop-shadow(0 0 5px rgb(49, 43, 5));
+}
+
+.quiz-container .question, button, .result-container p {
+    border-radius: 15px;
+    background-image: linear-gradient(transparent);
+    background-color: rgba(209, 196, 12, 0.247);
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-img {
+    display: none;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 0 10px rgb(49, 43, 5);
+}
+
+.result-text {
+    display: none;
+    padding: 20px;
+}

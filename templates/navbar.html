@@ -1,0 +1,51 @@
+<html>
+    <header>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            li, ul {
+                list-style: none;
+            }
+            a {
+                text-decoration: none;
+                font-family: 'Chaparral Pro Light';
+                font-size: 1.1em;
+                color: rgb(37, 31, 31);
+            }
+            .nav_list-container {
+                display: flex;
+                background-image: linear-gradient(transparent);
+            }
+            .nav_list-container li {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                padding: 18px 10px;
+            }
+            .nav_list-container li:hover {
+                text-decoration: underline;
+                border-radius: 10px;
+                background-color: rgba(83, 4, 39, 0.171);
+            }
+            .active {
+                font-weight: bold;
+                text-decoration: underline;
+                border-radius: 10px;
+                background-color: rgba(83, 4, 39, 0.171);
+            }
+        </style>
+
+        <nav class="nav-container">
+            <ul class="nav_list-container">
+                <li id="home-link"><a href="../index.html">Home</a></li>
+                <li id="pollitos-link"><a href="../pollitos.html">Pollitos</a></li>
+                <li id="kpop-link"><a href="../kpop.html">K-Pop</a></li>
+                <li id="games-link"><a href="../wow-minecraft.html" >Games</a></li>
+                <li id="gry-link"><a href="../gryffindor.html" >Gryffindor</a></li>
+            </ul>
+        </nav>
+    </header>
+</html>
