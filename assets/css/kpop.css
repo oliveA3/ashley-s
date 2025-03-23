@@ -1,0 +1,11 @@
+body {
+    background-image: url("../../media/kpop/phone_wp.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.nav_list-container a {
+    color: #ccc;
+}
