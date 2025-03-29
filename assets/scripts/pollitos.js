@@ -30,19 +30,19 @@ document.getElementById("pollito-btn").addEventListener("click", () => {
 	let max = Math.max(vago, cariñoso, inteligente, aventurero);
 
 	if (max == vago) {
-		img.src = `../../media/pollitos/pollito_vago.jpg`;
+		img.src = `media/pollitos/pollito_vago.jpg`;
 		text.innerHTML =
 			"Eres un pollito relajado (vago), lo tuyo es no meterte en nada y vivir la vida por vivirla.";
 	} else if (max == inteligente) {
-		img.src = `../../media/pollitos/pollito_inteligente.jpg`;
+		img.src = `media/pollitos/pollito_inteligente.jpg`;
 		text.innerHTML =
 			"Eres un pollito muy inteligente y curioso, vives para aprender.";
 	} else if (max == cariñoso) {
-		img.src = `../../media/pollitos/pollito_cariñoso.jpg`;
+		img.src = `media/pollitos/pollito_cariñoso.jpg`;
 		text.text.innerHTML =
 			"Eres un pollito virtuoso al que le gusta el arte, amas a todos a tu alrededor (Hufflelpuff).";
 	} else {
-		img.src = `../../media/pollitos/pollito_aventurero.jpg`;
+		img.src = `media/pollitos/pollito_aventurero.jpg`;
 		text.innerHTML =
 			"Eres un pollito aventurero y valiente, sin miedo a arriesgar y ganar.";
 	}
