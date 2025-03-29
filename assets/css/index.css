@@ -24,12 +24,6 @@ img {
     padding: 0 20px;
 }
 
-#sparkles {
-    position: absolute;
-    width: 95%;
-    height: 80vh;
-}
-
 #stars {
     position: absolute;
     right: -1px;
